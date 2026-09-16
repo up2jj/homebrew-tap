@@ -36,8 +36,10 @@ cask "wuko" do
   fish_completion "completions/wuko.fish"
   zsh_completion "completions/wuko.zsh"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/wuko"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/wuko"]
+    end
   end
 
   # No zap stanza required
