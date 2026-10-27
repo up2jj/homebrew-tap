@@ -6,25 +6,25 @@ cask "wuko" do
     end
   end
 
-  version "0.19.0"
+  version "0.20.0"
 
   on_macos do
     on_arm do
-      sha256 "e601195422390ed48245b93036b2e58dad235f510dfb84cab4f4b6c5a31e7d90"
+      sha256 "cdff332ea92b79b75c9a276be8bc8a8ed54c309c0ce205ea64544a1892accf92"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "030e21b6327c0e40a67b0bd8498c2945e1a77ec8b34be108b24ef0009e2f84cf"
+      sha256 "b3b117c628f8705a443b55ab0e10bf0e58ae5bcc95fcaee77cf8d36e4ee8725e"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "dd19e0423c2c959734c10ce10d9bf098a6047bba0a5eb21508f2c5483c314139"
+      sha256 "5209f0667dfd8a29310a1e7d5acffeb9cc78bd83f213ecde301e74293bc82463"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "51b9fc6603ebd69b406503ed60e118699e2541eaf3981f8a975a54fcea90e4cb"
+      sha256 "88ca11ad79df0f2dd2d9571b74440aec1a1b27cd3bf99a3f5f159b4190686212"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,8 +39,8 @@ cask "wuko" do
 
   binary "wuko"
   bash_completion "completions/wuko.bash"
-  fish_completion "completions/wuko.fish"
   zsh_completion "completions/wuko.zsh"
+  fish_completion "completions/wuko.fish"
 
   # No zap stanza required
 end
