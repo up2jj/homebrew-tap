@@ -6,25 +6,25 @@ cask "wuko" do
     end
   end
 
-  version "0.21.0"
+  version "0.22.0"
 
   on_macos do
     on_arm do
-      sha256 "b724c6ef7001af0b54e27a29ac37da480ae422d83de5b25c0b242d69ef53dd72"
+      sha256 "619a14b0f530d9fa836ffacb95c939d9d953b21697ffee66c148805fee367a2d"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1b26357df081b90d0b025d85e1b84dc564b543b5b0ff69e190cb1463692974f1"
+      sha256 "c7a742ded76199cd9c67146fd5a2a39d0c9721a258460ce183ab90f9f7e41e89"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "f182e3003a419d34479a9350e8493ea75227f297d73a58ccea247f6bd7849a3c"
+      sha256 "74f742bedb57a20fa67c47425a583296cfde38ac86240a774cee84adbf36fb2d"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ebdb75928e915221a47262e54f946c67aa780a62d7f26a4b364638f3bb07428a"
+      sha256 "33fd8ecb9716fe076df157253c62c90d79347e25aefd844a0df7b5c318276ab9"
       url "https://github.com/up2jj/wuko/releases/download/v#{version}/wuko_#{version}_linux_amd64.tar.gz"
     end
   end
